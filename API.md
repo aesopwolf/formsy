@@ -626,7 +626,7 @@ Formsy.addValidationRule('isFruit', function (values, value) {
 });
 ```
 ```jsx
-<MyInputComponent name="fruit" validations="'isFruit"/>
+<MyInputComponent name="fruit" validations="isFruit"/>
 ```
 Another example:
 ```jsx
@@ -658,6 +658,8 @@ Formsy.addValidationRule('isMoreThan', function (values, value, otherField) {
 }}/>
 ```
 Returns true if the value is thruthful
+
+_For more complicated regular expressions (emoji, international characters) you can use [xregexp](https://github.com/slevithan/xregexp). See [this comment](https://github.com/christianalfoni/formsy-react/issues/407#issuecomment-266306783) for an example._
 
 **isEmail**
 ```jsx
